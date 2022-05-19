@@ -1,18 +1,14 @@
-dic = {'N':'Nuevo', 'E':'Editar','B': 'Borrar', 'S': 'Salir' }
-def funcionMenu( diccionario ):
-    print("""Seleccione una de las siguientes opciones: """)
-    for k , v in diccionario.items():
-        print(k,v)
-    opcion= input("Ingrese letra a la opción deseada  ")
+from menus import *
+from funciones import *
 
-   
+from LinkedList import *
 
+seguir = True
+while seguir:
+    inicio = funcionMenu(menuPrincipal)
 
-    res = opcion if opcion.capitalize() in diccionario.keys() else "la opción ingresada es inexistente"
-
-    return res.capitalize()
-    
-
-
-
-print(funcionMenu(dic))
+    if inicio =="1":
+        opcion= input("Ingrese valor inicial (numero entero) para crear linked list ")
+        linkedList = LinkedList(int(opcion))
+        print(linkedList.Listar())
+       

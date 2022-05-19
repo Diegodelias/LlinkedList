@@ -3,7 +3,7 @@ def funcionMenu( diccionario ):
     print("""Seleccione una de las siguientes opciones: """)
     for k , v in diccionario.items():
         print('[',k,']',v )
-    opcion= input("Ingrese número de la opción deseada  ")
+    opcion= input("Ingrese numero de la opción deseada  ")
 
         
         
