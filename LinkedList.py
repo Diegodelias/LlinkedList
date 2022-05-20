@@ -8,14 +8,7 @@ class LinkedList :
         self.largoLinkedList = 1
 
     def agregarFinal(self,num):
-       # recorrer linkedList  mientras link != None:
-       #cuando sea igual None
-    #    nodoNuevo = {'numero' : num , 'link' : None}
-    #    self.tail['link'] = nodoNuevo
-    #    self.tail = nodoNuevo
-    #    self.largoLinkedList = self.largoLinkedList + 1
-    #    return self
-
+ 
         nodoNuevo = {'numero' : num , 'link' : None}
         if self.head is None:
             self.head = nodoNuevo
@@ -28,11 +21,7 @@ class LinkedList :
 
 
     def agregarInicio(self,num):    
-        #  nodoNuevo = {'numero' : num , 'link' : None}
-        #  nodoNuevo['link'] = self.head
-        #  self.head = nodoNuevo
-        #  self.largoLinkedList = self.largoLinkedList + 1
-        #  return self
+       
         nodoNuevo = {'numero' : num , 'link' : None}
         nodoNuevo['link'] = self.head
         self.head = nodoNuevo
@@ -40,24 +29,7 @@ class LinkedList :
 
 
 
-    #opcional
-    def insertar(self,index, num):
-        if (index >= self.largoLinkedList) :
-            self.agregarFinal(num)
-            return self.Listar()
-
-        
-        nodoNuevo = {'numero' : num , 'link' : None}
-
-        nodoIzquierda = self.irPosicionInsertar(index-1)
-        #guarda referencia a nodo a la derecha del nodo nuevo que se va a insertar
-        nodoDerechaTemp = nodoIzquierda['link']
-        #inserción nodo nuevo
-        nodoIzquierda['link'] = nodoNuevo
-        nodoNuevo['link'] = nodoDerechaTemp
-
-        self.largoLinkedList = self.largoLinkedList + 1
-        return self.Listar()
+ 
 
     def buscar(self,num):
         contador = 0
@@ -117,74 +89,8 @@ class LinkedList :
            
             nodo['link'] = nodo['link']['link']
 
-    def irPosicionInsertar(self,index):
-        contador = 0
-        nodoActual = self.head
-        while (contador != index):
-             nodoActual = nodoActual['link']
-             contador = contador + 1
-
-        return nodoActual
-
 
 
     
-
-
-#obte
-
-
-
-linkedList = LinkedList(3)
-linkedList.agregarFinal(20)
-linkedList.agregarFinal(55)
-linkedList.agregarFinal(204)
-print(linkedList.Listar())
-linkedList.agregarInicio(7)
-print(linkedList.Listar())
-linkedList.borrar(204)
-print(linkedList.Listar())
-linkedList.agregarFinal(155)
-print(linkedList.Listar())
-linkedList.borrar(20)
-print(linkedList.Listar())
-linkedList.borrar(55)
-print(linkedList.Listar())
-# print(linkedList.Listar())
-# linkedList.agregarFinal(79)
-# print(linkedList.Listar())
-# print(linkedList.buscar(557))
-# linkedList.borrar(3)
-# print(linkedList.Listar())
-
-print(linkedList.buscar(77))
-
-print(linkedList.buscar(3))
-
-
-
-#print(linkedList.buscar(28))
-
-
-# print(linkedList.Listar())
-
-# linkedList.agregarInicio(79)
-
-
-
-# print(linkedList.Listar())
-
-# linkedList.insertar(2,107)
-
-# print(linkedList.Listar())
-
-# linkedList.borrar(2)
-
-# print(linkedList.Listar())
-
-# linkedList.borrar(3)
-
-
-
 
 

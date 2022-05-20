@@ -100,7 +100,6 @@ class BinaryTree:
 
  
 
-
     def listar(self):
         self._listar(self.raiz,0,10)
 
@@ -141,40 +140,5 @@ class BinaryTree:
 
 
                      
-
-
-
-        
-
-
-   
-
-
-
-tree = BinaryTree()
-tree.insertar(13)
-tree.insertar(3)
-tree.insertar(14)
-tree.insertar(18)
-tree.insertar(1)
-tree.insertar(4)
-
-tree.listar()
-
-print("------------------------------------------")
-
-
-tree.borrar(4)
-# tree.borrar(3)
-tree.listar()
-print(tree.buscar(34))
-
-
-
-print("------------------------------------------")
-
-tree.borrar(14)
-# tree.borrar(3)
-tree.listar()
 
 

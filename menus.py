@@ -1,3 +1,4 @@
-menuPrincipal = {'1':'Crear nueva LinkedList', '2':'Crear nuevo Binary Tree'}
+menuPrincipal = {'1':'Crear nueva LinkedList', '2':'Crear nuevo Binary Tree','3':'Salir'}
 valorInicial = {'1':'Ingrese numero inicial para la LinkedList'}
-menuLinkedList = {'1':'Ingrese numero inicial para la LinkedList'}
+menuLinkedList = {'1':'Agregar numero al inicio de la Linked List', '2': 'Agregar numero al final de la linked list', '3':'Borrar numero de la linked List','4':'Buscar numero en la linked list', '5':'Listar elementos de la liked list' ,'6': 'Volver a menu principal'}
+menuBinaryTree = {'1':'Agregar numero al binary tree', '2': 'Ingresa numero a buscar en el binary tree', '3':'Borrar numero del binary tree','4':'Listar binary tree' ,'5': 'Volver a menu principal'}
